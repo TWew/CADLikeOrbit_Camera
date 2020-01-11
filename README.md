@@ -1,9 +1,9 @@
-# CADLikeOrbit_Camera
 A Camera wich behaves like most Cameras in 
 CAD-Softwares. It uses the mouse and lets you Orbit,
 Zoom and Pan around. 
 
 Usage:
+
 	1. Activate Plugin
 	2. Add CADLike-Orbit Camera via new Node (Control+A)  to the Scene
 	3. Define InputMap-Actions: (Project->Poject Settings->InputMap)
