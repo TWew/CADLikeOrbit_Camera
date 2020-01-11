@@ -125,7 +125,7 @@ func Rotating():
 			if IfNoObjPickedRotateAroundOrigin:
 				focalpoint = Vector3(0,0,0) # if not Object Picked then use Worldspace Origin as focalpoint
 			else:
-				focalpoint = (global_transform * Transform.IDENTITY.translated(Vector3(0,0,-DEFAULTFOCALDIST))).origin
+				focalpoint = global_transform.origin + (raynormal.normalized() * DEFAULTFOCALDIST)
 
 		#Set Focalpointsphere if activated
 		if USEFOCALPOINTSPHERE:
